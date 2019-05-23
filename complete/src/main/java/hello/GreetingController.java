@@ -16,4 +16,10 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+
+    @RequestMapping("/simon")
+    public String simon() {
+        return "Pre Oravaka Simonka";
+    }
+
 }
